@@ -6,19 +6,23 @@ Rust cli for creating new serialized ksuids and deserialized and unpacking ksuid
 rksuid-cli create
 ```
 ```rust
-Got ksuid: 1Qu4dNIRriAzAzXt4Kb4TyJvg98
- Contents: Ksuid {
-    timestamp: 168607233,
-    payload: 120430477075427929952839731923742191110,
-}
+REPRESENTATION:
+        String: 1QyYNBGsajtQywsofgDVq8fEyGa
+        Raw: A0ED5444CDAC9DED3C25FDD67FB2247
+COMPONENTS:
+        Time: Tue, 17 Sep 2019 18:17:40 +0000
+        Timestamp: 168744260
+        Payload: 4CDAC9DED3C25FDD67FB224798418694
 ```
 ```
 rksuid-cli inspect 1QtFxXJfPVU6NOwPOsHsaihkm8U
 ```
 ```rust
-Got ksuid: 1QtFxXJfPVU6NOwPOsHsaihkm8U
- Contents: Ksuid {
-    timestamp: 168582232,
-    payload: 38425313529232428683585399619468893070,
-}
+REPRESENTATION:
+        String: 1QtFxXJfPVU6NOwPOsHsaihkm8U
+        Raw: A0C5C581CE87239D33C9F3E68491291
+COMPONENTS:
+        Time: Sun, 15 Sep 2019 21:17:12 +0000
+        Timestamp: 168582232
+        Payload: 1CE87239D33C9F3E684912918D639B8E
 ```
