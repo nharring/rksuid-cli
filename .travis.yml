@@ -1,14 +1,9 @@
 sudo: false
 language: rust
-matrix:
-  rust:
-    - stable
-    - beta
-  script:
-    - cargo build
-    - cargo test
-  allow_failures:
-      rust:
-        - beta
+rust:
+  - stable
+  - beta
+script:
+  - cargo test
 
 cache: cargo
