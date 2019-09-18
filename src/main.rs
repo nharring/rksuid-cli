@@ -9,17 +9,16 @@ struct CliOpts {
 
 fn main() {
     let args = CliOpts::from_args();
-    let ksuid: Option<Ksuid>;
-    match args.action {
-        action if action == "create" => ksuid = Some(create().unwrap()),
-        action if action == "inspect" => {
-            ksuid = Some(inspect(args.serialized.unwrap().as_str()).unwrap())
-        }
-        _ => ksuid = None,
-    }
+
+    let ksuid: Option<Ksuid> = match args.action {
+        ref action if action == "create" => Some(create().unwrap()),
+        ref action if action == "inspect" =>
+            Some(inspect(args.serialized.unwrap().as_str()).unwrap()),
+        _ => None,
+    };
     match ksuid {
-        Some(ksuid) => {println!("{}",ksuid.get_formatted());}
-        None => {}
+        Some(ksuid) => {println!("{}",ksuid.get_formatted());},
+        None => {},
     }
 }
 
