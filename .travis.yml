@@ -1,11 +1,12 @@
 sudo: false
 language: rust
 rust:
-  - nightly
-
-# the main build
+  - stable
+  - beta
 script:
   - cargo build
-  - cargo test
-  - cargo bench
+allow_failures:
+    rust:
+      - beta
+
 cache: cargo

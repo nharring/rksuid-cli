@@ -3,8 +3,12 @@ name = "rksuid-cli"
 version = "0.1.0"
 authors = ["Nicholas Harring <nharring@users.noreply.github.com>"]
 edition = "2018"
+readme="README.md"
+license="MIT"
+keywords=["ksuid", "uuid"]
+description="Command line client for creating and deserializing Ksuids using rksuid crate"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 
 [dependencies]
 rksuid = "0.2.0"
