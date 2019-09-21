@@ -11,7 +11,7 @@ description="Command line client for creating and deserializing Ksuids using rks
 
 
 [dependencies]
-rksuid = "0.2.0"
+rksuid = "0.2.1"
 structopt = "0.2.10"
 
 [dev-dependencies]
